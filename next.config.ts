@@ -1,7 +1,13 @@
 import nextra from 'nextra'
 
 const withNextra = nextra({
-  latex: true,
+  latex: {
+    renderer: 'katex',
+    options: {
+      throwOnError: false,
+      output: 'mathml',
+    }
+  },
   defaultShowCopyCode: true
 })
 
