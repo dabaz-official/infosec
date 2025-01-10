@@ -15,7 +15,7 @@ export const viewport: Viewport = Head.viewport
 export const metadata: Metadata = {
   title: {
     absolute: '',
-    template: '%s | InfoSec'
+    template: '%s - InfoSec'
   },
   description: '一个关于信息系统安全的在线文档，由 DabAZ 制作和撰写。',
   metadataBase: new URL('https://infosec.dabaz.me'),
@@ -84,7 +84,7 @@ const RootLayout: FC<{
   const pageMap = await getPageMap()
 
   return (
-    <html lang="en" dir="ltr" suppressHydrationWarning>
+    <html lang="zh-CN" dir="ltr" suppressHydrationWarning>
       <Head />
       <body className="antialiased">
         <Layout
@@ -93,7 +93,20 @@ const RootLayout: FC<{
           docsRepositoryBase="https://github.com/dabaz-official/infosec/tree/main/docs"
           editLink="在 GitHub 上编辑此页面 →"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
+          navigation={{
+            prev: true,
+            next: true
+          }}
+          feedback={{
+            content: '在 GitHub 上反馈问题 →',
+            labels: '反馈'
+          }}
           footer={footer}
+          themeSwitch={{
+            dark: '黑暗',
+            light: '明亮',
+            system: '系统'
+          }}
         >
           {children}
         </Layout>
