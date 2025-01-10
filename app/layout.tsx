@@ -25,6 +25,20 @@ export const metadata: Metadata = {
   appleWebApp: {
     title: 'InfoSec'
   },
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicon-white.svg',
+        type: 'image/svg+xml'
+      },
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/favicon-black.svg',
+        type: 'image/svg+xml'
+      }
+    ]
+  },
   other: {
     'msapplication-TileColor': '#fff'
   },
