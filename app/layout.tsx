@@ -91,14 +91,14 @@ const RootLayout: FC<{
           navbar={navbar}
           pageMap={pageMap}
           docsRepositoryBase="https://github.com/dabaz-official/infosec/tree/main/docs"
-          editLink="在 GitHub 上编辑此页面 →"
+          editLink="在 GitHub 上编辑此页面"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
           navigation={{
             prev: true,
             next: true
           }}
           feedback={{
-            content: '在 GitHub 上反馈问题 →',
+            content: '在 GitHub 上反馈问题',
             labels: '反馈'
           }}
           footer={footer}
